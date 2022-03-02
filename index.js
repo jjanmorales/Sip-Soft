@@ -57,8 +57,8 @@ fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/has-alcohol/fa
         console.log(item)
     })
 
-instructionsButton.addEventListener('click', () => {
-    // firstCardParagraph.style.display = 'none'
+instructionsButton.addEventListener('click', (e) => {
+    e.preventDefault()
     
 })
 
