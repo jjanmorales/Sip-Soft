@@ -52,9 +52,10 @@ fetch(`https://www.thecocktaildb.com/api/json/v1/1/random.php`)
         firstCard.innerText = data.drinks[0].strDrink
         firstCardImage.src = data.drinks[0].strDrinkThumb
         console.log(data.drinks[0])
-        // let category = data.drinks[0].strCategory
-        // let mainIngredient = data.drinks
-        // firstCardParagraph.innerText = 
+        // let IBA = data.drinks[0]
+        let category = data.drinks[0].strCategory
+        let mainIngredient = data.drinks[0].strIngredient1
+        firstCardParagraph.innerText = `${category} \n Made with ${mainIngredient}`
     })
 
 
