@@ -1,5 +1,6 @@
 const nameSearchButton = document.getElementById('search-btn')
 const userInputDrinkName = document.getElementById('user-input-name').value
+const secondDrinkCard = document.getElementById('second-drink-cards')
 
 nameSearchButton.addEventListener("click", (e) => {
     e.preventDefault()
@@ -8,6 +9,22 @@ nameSearchButton.addEventListener("click", (e) => {
         .then(res => res.json())
         .then(data => {
             console.log(data[0].drinkName)
+            console.log(data[0])
+            let drinkName = data[0].drinkName
+            let drinkPic = data[0].drinkThumb
+            let category = data[0].drinkCategory
+            let mainIngredient = data[0].drinkIngredients[0]
+            firstCard.innerText = drinkName
+            firstCardImage.src = drinkPic
+            firstCardParagraph.innerText = `${category} \n Made with ${mainIngredient}`
+            
+
+            secondDrinkCard.style.display = 'none'
+            instructionsButton.addEventListener('click', (e) => {
+                e.preventDefault()
+                instructionsParagraph.innerText = data[0].drinkInstructions
+                instructionsButton.style.display = 'none'
+            })
         })
 })
 
