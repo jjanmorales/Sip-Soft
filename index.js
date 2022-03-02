@@ -1,3 +1,20 @@
+window.addEventListener('DOMContentLoaded', () => {
+
+    const btn = document.getElementById('search-btn')
+    const userInput = document.getElementById('user-input').value 
+
+    btn.addEventListener("click", (e) => {
+        e.preventDefault()
+        let userChoice = userInput;
+        fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${userChoice}`)
+            .then(res => res.json())
+            .then(data => {
+                data.drinks.forEach(drink => {
+                    console.log(drink.strDrink) 
+                });
+            })
+    })
+  
 const nameSearchButton = document.getElementById('search-btn')
 const userInputDrinkName = document.getElementById('user-input-name').value
 
@@ -40,7 +57,6 @@ ingredientSearchButton.addEventListener('click', (e) => {
             })
         })
 })
-
 
 
 // http://www.thecocktaildb.com/api/json/v1/1/random.php
