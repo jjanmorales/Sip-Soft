@@ -14,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 });
             })
     })
+
 })
 
 // http://www.thecocktaildb.com/api/json/v1/1/random.php

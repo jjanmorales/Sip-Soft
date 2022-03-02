@@ -7,12 +7,30 @@
     <link rel="stylesheet" href="index.css">
     <title>Sip Soft</title>
 </head>
-<form>
-    <label for="fname">Search for a Cocktail</label><br>
-    <input type="text" id="user-input"/><br>
-    <button type="Submit" id="push-button">Hello</button>
-  </form>
 <body>
+    <div id="header-title">
+        <h2>Sip Soft</h2>
+    </div>
+    <div id="search-bar">
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+              <input id="user-input" class="form-control mr-sm-2" type="search" placeholder="Search Cocktail" aria-label="Search">
+              <button id="search-btn" type="submit">Search</button>
+            </form>
+          </nav>
+          <div>
+              <button type="submit" id="random-drink">Random Cocktail</button>
+          </div>
+          <div id="welcome-card">
+            <div class="card w-75">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+          </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
