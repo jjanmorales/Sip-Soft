@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-const btn = document.getElementById('push-button')
+const btn = document.getElementById('search-btn')
 
 btn.addEventListener("click", (e) => {
     e.preventDefault()
