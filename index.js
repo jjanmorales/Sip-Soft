@@ -4,12 +4,10 @@ const userInputDrinkName = document.getElementById('user-input-name').value
 nameSearchButton.addEventListener("click", (e) => {
     e.preventDefault()
     let userChoice = userInputDrinkName
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${userChoice}`)
+        fetch(`https://cocktail-recipes-tully4school.herokuapp.com/${userChoice}`)
         .then(res => res.json())
         .then(data => {
-            data.drinks.forEach(drink => {
-                console.log(drink.strDrink)
-            });
+            console.log(data[0].drinkName)
         })
 })
 
@@ -17,12 +15,11 @@ const randomButton = document.getElementById('random-drink')
 
 randomButton.addEventListener('click', (e) => {
     e.preventDefault()
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/random.php`)
+    fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/has-alcohol/false`)
         .then(res => res.json())
         .then(data => {
-            data.drinks.forEach(drink => {
-                console.log(drink.strDrink)
-            });
+            let item = data[Math.floor(Math.random()*data.length)]
+                console.log(item.drinkName)
         })
 })
 
@@ -32,12 +29,11 @@ const ingredientSearchButton = document.getElementById('ingredient-search-btn')
 ingredientSearchButton.addEventListener('click', (e) => {
     e.preventDefault()
     let userChoice = userInputIngredients
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${userChoice}`)
+    fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/category/${userChoice}`)
         .then(res => res.json())
         .then(data => {
-            data.drinks.forEach(drink => {
-                console.log(drink.strDrink)
-            })
+            let item = data[Math.floor(Math.random()*data.length)]
+            console.log(item.drinkName)
         })
 })
 
@@ -45,19 +41,25 @@ ingredientSearchButton.addEventListener('click', (e) => {
 const firstCard = document.getElementById('first-card')
 const firstCardImage = document.getElementById('first-card-img')
 const firstCardParagraph = document.getElementById('first-card-paragraph')
+const instructionsButton = document.getElementById('instructions-btn')
 
-fetch(`https://www.thecocktaildb.com/api/json/v1/1/random.php`)
+fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/has-alcohol/false`)
     .then(res => res.json())
     .then(data => {
-        firstCard.innerText = data.drinks[0].strDrink
-        firstCardImage.src = data.drinks[0].strDrinkThumb
-        console.log(data.drinks[0])
-        // let IBA = data.drinks[0]
-        let category = data.drinks[0].strCategory
-        let mainIngredient = data.drinks[0].strIngredient1
+        let item = data[Math.floor(Math.random()*data.length)]
+        let drinkName = item.drinkName
+        let drinkPic = item.drinkThumb
+        let category = item.drinkCategory
+        let mainIngredient = item.drinkIngredients[0]
+        firstCard.innerText = drinkName
+        firstCardImage.src = drinkPic
         firstCardParagraph.innerText = `${category} \n Made with ${mainIngredient}`
+        console.log(item)
     })
 
-
+instructionsButton.addEventListener('click', () => {
+    // firstCardParagraph.style.display = 'none'
+    
+})
 
 // http://www.thecocktaildb.com/api/json/v1/1/random.php
