@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+#welcome-card {
+    background-size: cover;
+    background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/negroni-cocktail-royalty-free-image-638677438-1567153315.jpg');
+}
