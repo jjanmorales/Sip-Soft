@@ -1,5 +1,3 @@
-window.addEventListener('DOMContentLoaded', () => {
-
     const btn = document.getElementById('search-btn')
     const userInput = document.getElementById('user-input').value 
 
