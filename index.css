@@ -18,15 +18,18 @@
 #main-message {
     background: rgba(255, 255, 255, 0.445);
     margin-bottom: 30px;  
-    height: 200px;  
+    height: 220px;  
 }
 
 #drink-cards {
     font-family: 'Lato';
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
+#second-instructions-btn,
 #instructions-btn {
     display: flex;
     justify-content: center;
@@ -39,4 +42,8 @@
     font-family: 'Lato';
     margin-bottom: 30px;
     margin-top: 30px;
+}
+
+.card-button {
+    margin-top: 15px;
 }
