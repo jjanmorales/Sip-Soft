@@ -56,6 +56,8 @@ randomButton.addEventListener('click', (e) => {
             
             
             randomDrinkDivHolder.style.visibility = 'visible'
+            randomDrinkDivHolder.style.paddingBottom = '500px'
+            
             randomDrinkInstructionsBtn.addEventListener('click', (e) => {
                 e.preventDefault()
                 randomDrinkInstructions.innerText = item.drinkInstructions
