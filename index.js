@@ -8,9 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     nameSearchButton.addEventListener("click", (e) => {
         e.preventDefault()
         let userChoice = userInputDrinkName.value
-        userChoice[0] = userChoice.toUpperCase()
-        console.log(userChoice)
-        console.log(userChoice)
+        // userChoice[0] = userChoice.toUpperCase()
+        if(userChoice !== ""){
         fetch(`https://cocktail-recipes-tully4school.herokuapp.com/${userChoice}`)
             .then(res => res.json())
             .then(data => {
@@ -44,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 })
 
             })
+        }
     })
 
 
@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ingredientSearchButton.addEventListener('click', (e) => {
         e.preventDefault()
         let userChoice = userInputIngredients.value
+        if(userChoice !== ""){
         fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/category/${userChoice}`)
             .then(res => res.json())
             .then(data => {
@@ -127,6 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     randomDrinkInstructionsBtn.style.visibility = 'hidden'
                 })
             })
+        }
     })
 
     // -------  First Card -------

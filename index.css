@@ -6,10 +6,16 @@ body {
   background-color: black;
 }
 
+.sipsoftly {
+    font-size: 50px;   
+    margin-top: 10px;  
+}
+
 #header-title {
   font-family: "Hind Madurai", sans-serif;
   font-family: "Playball", cursive;
   margin-left: 20px;
+  margin-top: 4px; 
 }
 #welcome-card {
   /* width: 50%;  */
@@ -116,17 +122,17 @@ body {
 
 #search-btn:hover {
   cursor: pointer;
-  background-color: rgb(193, 191, 191);
+  background-color: rgb(155, 237, 200);
 }
 
 #ingredient-search-btn:hover {
   cursor: pointer;
-  background-color: rgb(185, 184, 184);
+  background-color: rgb(155, 237, 200);
 }
 
 #random-drink:hover {
   cursor: pointer;
-  background-color: rgb(185, 184, 184);
+  background-color: rgb(155, 237, 200);
 }
 
 #twelve-instructions-btn:hover,
