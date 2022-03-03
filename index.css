@@ -41,8 +41,9 @@ body {
 #second-drink-cards,
 #drink-cards {
     font-family: 'Lato';
+    margin: 10px; 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 20px;
     margin-bottom: 40px;
 }
@@ -60,6 +61,7 @@ body {
 #instructions-btn-random,
 #second-instructions-btn,
 #instructions-btn {
+    background-color: rgb(31, 69, 68);
     display: flex;
     justify-content: center;
     align-items: center;
