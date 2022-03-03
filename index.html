@@ -22,29 +22,6 @@
     <div id="header-title">
         <h2>Sip Soft</h2>
     </div>
-    <!-- Search Bars -->
-
-    <div id="search-bar">
-        <nav class="navbar navbar-light bg-light">
-            <form class="form-inline">
-                <input id="user-input-name" class="form-control mr-sm-2" type="search" placeholder="Search Cocktail"
-                    aria-label="Search" />
-                <button id="search-btn" type="submit">Search</button>
-            </form>
-            <div>
-                <form class="form-inline">
-                    <input id="user-input-ingredients" class="form-control mr-sm-2" type="search"
-                        placeholder="Search Ingredient" aria-label="Search">
-                    <button id="ingredient-search-btn" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-        <div>
-            <button type="submit" id="random-drink">Random Cocktail</button>
-        </div>
-
-        <!-- Search Bars -->
-    </div> 
     <div id="welcome-card">
         <div class="card w-75" id="main-message">
             <div class="card-body">
@@ -53,11 +30,34 @@
                     Belly up to the bar and get recipes for your favorite drinks. Make your own martini, margarita,
                     Bloody Mary—plus all the best cocktail and mocktail recipes
                 </p>
-                <a href="#" class="btn btn-primary card-button">Button</a>
             </div>
         </div>
     </div>
 
+    <!-- Search Bars -->
+    <div id="search-bar">
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+                <input id="user-input-name" class="form-control mr-sm-2" type="search" placeholder="Search Cocktail"
+                    aria-label="Search" />
+                <button id="search-btn" type="submit">Search</button>
+            </form>
+            <div>
+                <button type="submit" id="random-drink">Random Cocktail</button>
+            </div>
+            <div>
+                <form class="form-inline">
+                    <input id="user-input-ingredients" class="form-control mr-sm-2" type="search"
+                        placeholder="Search Ingredient" aria-label="Search">
+                    <button id="ingredient-search-btn" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+       
+    </div>  
+     <!-- Search Bars -->
+
+     
     <!-- Random Cocktail Card  -->
     <div id="random-drink-card">
         <div class="card" style="width: 18rem">
@@ -76,7 +76,7 @@
     <!-- Random Cocktail Card  -->
 
     <h3 id="header-for-cards">Staff Picks</h3>
-
+    <div id="cards">
     <!-- Drink Cards -->
     <div id="drink-cards">
         <div class="card" style="width: 18rem">
@@ -107,6 +107,7 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 
 </html>
