@@ -27,6 +27,16 @@ body {
     height: 220px;  
 }
 
+#twelve-drink-cards,
+#eleven-drink-cards,
+#tenth-drink-cards,
+#ninth-drink-cards,
+#eighth-drink-cards,
+#seventh-drink-cards,
+#sixth-drink-cards,
+#fifth-drink-cards,
+#fourth-drink-cards,
+#third-drink-cards,
 #random-drink-card,
 #second-drink-cards,
 #drink-cards {
@@ -37,6 +47,16 @@ body {
     margin-bottom: 40px;
 }
 
+#twelve-instructions-btn,
+#eleven-instructions-btn,
+#tenth-instructions-btn,
+#ninth-instructions-btn,
+#eighth-instructions-btn,
+#seventh-instructions-btn,
+#sixth-instructions-btn,
+#fifth-instructions-btn,
+#fourth-instructions-btn,
+#third-instructions-btn,
 #instructions-btn-random,
 #second-instructions-btn,
 #instructions-btn {
