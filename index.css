@@ -1,32 +1,33 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black; 
+  background-color: black;
 }
 
 #header-title {
-    font-family: 'Hind Madurai', sans-serif;
-    font-family: 'Playball', cursive;
-    margin-left: 20px; 
+  font-family: "Hind Madurai", sans-serif;
+  font-family: "Playball", cursive;
+  margin-left: 20px;
 }
 #welcome-card {
-    /* width: 50%;  */
-    display: flex;
-    justify-content: left;
-    align-items: flex-end;  
-    height: 400px; 
-    background-size: cover;
-    background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/negroni-cocktail-royalty-free-image-638677438-1567153315.jpg');
+  /* width: 50%;  */
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  height: 400px;
+  background-size: cover;
+  background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/negroni-cocktail-royalty-free-image-638677438-1567153315.jpg");
 }
 
 #main-message {
-    background: rgba(255, 255, 255, 0.846);
-    margin-bottom: 30px;  
-    height: 220px;  
+  background: rgba(255, 255, 255, 0.846);
+  margin-bottom: 30px;
+  height: 220px;
 }
 
+#category-drink-cards1,
 #twelve-drink-cards,
 #eleven-drink-cards,
 #tenth-drink-cards,
@@ -40,13 +41,14 @@ body {
 #random-drink-card,
 #second-drink-cards,
 #drink-cards {
-    font-family: 'Lato';
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+  font-family: "Lato";
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
+#category-instructions-btn1,
 #twelve-instructions-btn,
 #eleven-instructions-btn,
 #tenth-instructions-btn,
@@ -60,58 +62,83 @@ body {
 #instructions-btn-random,
 #second-instructions-btn,
 #instructions-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 #cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 #header-for-cards {
-    display: flex;
-    justify-content: center;
-    font-family: 'Lato';
-    margin-bottom: 30px;
-    margin-top: -480px;
+  display: flex;
+  justify-content: center;
+  font-family: "Lato";
+  margin-bottom: 30px;
+  margin-top: -470px;
 }
 
 .card-button {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
-#random-drink, #search-btn, #ingredient-search-btn {
-    padding: 4px; 
-    border-radius: 5px;  
+#random-drink,
+#search-btn,
+#ingredient-search-btn {
+  padding: 4px;
+  border-radius: 5px;
 }
 
 #search-btn:hover {
-    cursor: pointer;
-    background-color: rgb(193, 191, 191);
+  cursor: pointer;
+  background-color: rgb(193, 191, 191);
 }
 
 #ingredient-search-btn:hover {
-    cursor: pointer;
-    background-color: rgb(185, 184, 184);
+  cursor: pointer;
+  background-color: rgb(185, 184, 184);
 }
 
 #random-drink:hover {
-    cursor: pointer;
-    background-color: rgb(185, 184, 184);
+  cursor: pointer;
+  background-color: rgb(185, 184, 184);
 }
 
-#instructions-btn-random, #instructions-btn, #second-instructions-btn{
-    background-color: rgb(31, 69, 68);
+#twelve-instructions-btn,
+#eleven-instructions-btn,
+#tenth-instructions-btn,
+#ninth-instructions-btn,
+#eighth-instructions-btn,
+#seventh-instructions-btn,
+#sixth-instructions-btn,
+#fifth-instructions-btn,
+#fourth-instructions-btn,
+#third-instructions-btn,
+#instructions-btn-random,
+#instructions-btn,
+#second-instructions-btn {
+  background-color: rgb(31, 69, 68);
 }
 
-#instructions-btn-random:hover, #instructions-btn:hover, #second-instructions-btn:hover{
-    background-color: rgb(52, 122, 118);
+
+#instructions-btn-random:hover,
+#instructions-btn:hover,
+#second-instructions-btn:hover {
+  background-color: rgb(52, 122, 118);
 }
+
+#category-drink-cards1,
 #random-drink-card {
-    margin-top: 50px;
-    /* display: none; */
-    visibility: hidden
+  margin-top: 50px;
+  /* display: none; */
+  visibility: hidden;
 }
+
+
+.card-body {
+    background-color: #e8ebf2;
+    
+}
+
