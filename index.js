@@ -32,14 +32,35 @@ nameSearchButton.addEventListener("click", (e) => {
 })
 
 const randomButton = document.getElementById('random-drink')
+const randomDrinkCardTitle = document.getElementById('random-drink-name')
+const randomDrinkImg = document.getElementById('random-drink-card-img')
+const randomDrinkParagraph = document.getElementById('random-drink-paragraph')
+const randomDrinkInstructionsBtn = document.getElementById('instructions-btn-random')
+const randomDrinkInstructions = document.getElementById('random-drink-instructions')
+const randomDrinkDivHolder = document.getElementById('random-drink-card')
+
 
 randomButton.addEventListener('click', (e) => {
     e.preventDefault()
     fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/has-alcohol/false`)
         .then(res => res.json())
         .then(data => {
+            
             let item = data[Math.floor(Math.random() * data.length)]
-            console.log(item.drinkName)
+            console.log(item)
+            let category = item.drinkCategory
+            let mainIngredient = item.drinkIngredients[0]
+            randomDrinkCardTitle.innerText = item.drinkName
+            randomDrinkParagraph.innerText = `${category} \n Made with ${mainIngredient}`
+            randomDrinkImg.src = item.drinkThumb
+            
+            
+            randomDrinkDivHolder.style.visibility = 'visible'
+            randomDrinkInstructionsBtn.addEventListener('click', (e) => {
+                e.preventDefault()
+                randomDrinkInstructions.innerText = item.drinkInstructions
+                randomDrinkInstructionsBtn.style.display = 'none'
+            })
         })
 })
 

@@ -31,6 +31,7 @@
     margin-bottom: 40px;
 }
 
+#instructions-btn-random,
 #second-instructions-btn,
 #instructions-btn {
     display: flex;
@@ -53,4 +54,5 @@
 #random-drink-card {
     margin-top: 50px;
     /* display: none; */
+    visibility: hidden
 }
