@@ -2,11 +2,17 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black; 
+}
+
 #header-title {
     font-family: 'Hind Madurai', sans-serif;
     font-family: 'Playball', cursive;
+    margin-left: 20px; 
 }
 #welcome-card {
+    /* width: 50%;  */
     display: flex;
     justify-content: left;
     align-items: flex-end;  
@@ -16,7 +22,7 @@
 }
 
 #main-message {
-    background: rgba(255, 255, 255, 0.445);
+    background: rgba(255, 255, 255, 0.846);
     margin-bottom: 30px;  
     height: 220px;  
 }
@@ -38,6 +44,12 @@
     align-items: center;
 }
 
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 #header-for-cards {
     display: flex;
     justify-content: center;
