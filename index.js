@@ -7,12 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     nameSearchButton.addEventListener("click", (e) => {
         e.preventDefault()
         let userChoice = userInputDrinkName.value
-        console.log(userChoice)
         fetch(`https://cocktail-recipes-tully4school.herokuapp.com/${userChoice}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data[0].drinkName)
-                console.log(data[0])
                 let drinkName = data[0].drinkName
                 let drinkPic = data[0].drinkThumb
                 let category = data[0].drinkCategory
@@ -32,6 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
             })
     })
 
+
+    // -------------- Random Cocktail Button --------------
     const randomButton = document.getElementById('random-drink')
     const randomDrinkCardTitle = document.getElementById('random-drink-name')
     const randomDrinkImg = document.getElementById('random-drink-card-img')
@@ -47,7 +46,41 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(res => res.json())
             .then(data => {
                 let item = data[Math.floor(Math.random() * data.length)]
-                console.log(item)
+                let category = item.drinkCategory
+                let mainIngredient = item.drinkIngredients[0]
+                randomDrinkCardTitle.innerText = item.drinkName
+                randomDrinkParagraph.innerText = `${category} \n Made with ${mainIngredient}`
+                randomDrinkImg.src = item.drinkThumb
+
+                randomDrinkDivHolder.style.visibility = 'visible'
+                randomDrinkDivHolder.style.paddingBottom = '500px'
+
+                randomDrinkInstructionsBtn.addEventListener('click', (e) => {
+                    e.preventDefault()
+                    randomDrinkInstructions.innerText = item.drinkInstructions
+                    randomDrinkInstructionsBtn.style.display = 'none'
+                })
+            })
+    })
+    // -------------- Random Cocktail Button --------------
+
+    const userInputIngredients = document.getElementById('user-input-ingredients')
+    const ingredientSearchButton = document.getElementById('ingredient-search-btn')
+    // const categoryCardTitle = document.getElementById('category-card1')
+    // const categoryCardImg = document.getElementById('category-card1-img')
+    // const categoryCardParagraph = document.getElementById('category-card1-paragraph')
+    // const categoryCardInstructions = document.getElementById('category-card1-instructions')
+    // const categoryInstructionsButton = document.getElementById('category-instructions-btn1')
+    // const categoryDivHolder = document.getElementById('category-drink-cards1')
+    
+
+    ingredientSearchButton.addEventListener('click', (e) => {
+        e.preventDefault()
+        let userChoice = userInputIngredients.value
+        fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/category/${userChoice}`)
+            .then(res => res.json())
+            .then(data => {
+                let item = data[Math.floor(Math.random() * data.length)]
                 let category = item.drinkCategory
                 let mainIngredient = item.drinkIngredients[0]
                 randomDrinkCardTitle.innerText = item.drinkName
@@ -65,27 +98,13 @@ document.addEventListener("DOMContentLoaded", () => {
             })
     })
 
-    const userInputIngredients = document.getElementById('user-input-ingredients')
-    const ingredientSearchButton = document.getElementById('ingredient-search-btn')
-
-    ingredientSearchButton.addEventListener('click', (e) => {
-        e.preventDefault()
-        let userChoice = userInputIngredients.value
-        fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/category/${userChoice}`)
-            .then(res => res.json())
-            .then(data => {
-                let item = data[Math.floor(Math.random() * data.length)]
-                console.log(item.drinkName)
-            })
-    })
-
-    // -----------  First Card -----------
+    // -------  First Card -------
     const firstCard = document.getElementById('first-card')
     const firstCardImage = document.getElementById('first-card-img')
     const firstCardParagraph = document.getElementById('first-card-paragraph')
     const instructionsButton = document.getElementById('instructions-btn')
     const instructionsParagraph = document.getElementById('first-card-instructions')
-    // -----------  First Card -----------
+    // -------  First Card -------
 
     fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/has-alcohol/false`)
         .then(res => res.json())
@@ -261,7 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const seventhInstructionsParagraph = document.getElementById('seventh-card-instructions')
 
 
-    fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/`)
+    fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/has-alcohol/false`)
         .then(res => res.json())
         .then(data => {
             let item = data[Math.floor(Math.random() * data.length)]
@@ -290,7 +309,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const eighthInstructionsParagraph = document.getElementById('eighth-card-instructions')
 
 
-    fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/`)
+    fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/has-alcohol/false`)
         .then(res => res.json())
         .then(data => {
             let item = data[Math.floor(Math.random() * data.length)]
@@ -348,7 +367,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const tenthInstructionsParagraph = document.getElementById('tenth-card-instructions')
 
 
-    fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/`)
+    fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/has-alcohol/false`)
         .then(res => res.json())
         .then(data => {
             let item = data[Math.floor(Math.random() * data.length)]
@@ -406,7 +425,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const twelveInstructionsParagraph = document.getElementById('twelve-card-instructions')
 
 
-    fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/`)
+    fetch(`https://cocktail-recipes-tully4school.herokuapp.com/drinks/has-alcohol/false`)
         .then(res => res.json())
         .then(data => {
             let item = data[Math.floor(Math.random() * data.length)]
