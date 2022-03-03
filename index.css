@@ -21,6 +21,8 @@
     height: 220px;  
 }
 
+#random-drink-card,
+#second-drink-cards,
 #drink-cards {
     font-family: 'Lato';
     display: flex;
@@ -46,4 +48,9 @@
 
 .card-button {
     margin-top: 15px;
+}
+
+#random-drink-card {
+    margin-top: 50px;
+    /* display: none; */
 }
