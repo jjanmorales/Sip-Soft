@@ -14,6 +14,36 @@ body {
 #welcome-card {
   /* width: 50%;  */
   display: flex;
+  margin: 30px;  
+  justify-content: space-evenly;
+  align-items: flex-end;
+  height: 400px;
+  background-size: cover;
+  background-image: url("https://www.asia-bars.com/wp-content/uploads/2019/08/gallery-cocktail-bar.jpg");
+}
+
+#main-message {
+  background: rgba(110, 39, 39, 0.798);
+  color: rgb(255, 239, 239);
+  margin-bottom: 30px;
+  width: 400px; 
+  height: 220px;
+  
+}
+
+
+.card-text {
+    font-size: 20px; 
+}
+
+.welcome-body {
+    margin-left: 20px; 
+    margin-top: 20px;
+    width: 500px 
+}
+
+#search-bar{
+  background-color: rgb(247, 243, 243) !important;  
   justify-content: left;
   align-items: flex-end;
   height: 400px;
@@ -41,11 +71,12 @@ body {
 #random-drink-card,
 #second-drink-cards,
 #drink-cards {
-  font-family: "Lato";
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
+    font-family: 'Lato';
+    margin: 10px; 
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 #category-instructions-btn1,
@@ -62,9 +93,10 @@ body {
 #instructions-btn-random,
 #second-instructions-btn,
 #instructions-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-color: rgb(31, 69, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #cards {
@@ -89,6 +121,7 @@ body {
 #ingredient-search-btn {
   padding: 4px;
   border-radius: 5px;
+  background-color: rgb(255, 255, 255);
 }
 
 #search-btn:hover {
@@ -105,6 +138,25 @@ body {
   cursor: pointer;
   background-color: rgb(185, 184, 184);
 }
+
+#twelve-instructions-btn:hover,
+#eleven-instructions-btn:hover,
+#tenth-instructions-btn:hover,
+#ninth-instructions-btn:hover,
+#eighth-instructions-btn:hover,
+#seventh-instructions-btn:hover,
+#sixth-instructions-btn:hover,
+#fifth-instructions-btn:hover,
+#fourth-instructions-btn:hover,
+#third-instructions-btn:hover,
+#instructions-btn-random:hover,
+#instructions-btn:hover,
+#second-instructions-btn:hover {
+    background-color: rgb(52, 122, 118);
+}
+
+
+
 
 #twelve-instructions-btn,
 #eleven-instructions-btn,
@@ -138,7 +190,6 @@ body {
 
 
 .card-body {
-    background-color: #e8ebf2;
-    
+    background-color: #fefdf5;
 }
 

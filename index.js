@@ -104,6 +104,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 randomDrinkDivHolder.style.visibility = 'visible'
                 randomDrinkDivHolder.style.paddingBottom = '500px'
 
+
+                randomDrinkInstructionsBtn.addEventListener('click', (e) => {
+                    e.preventDefault()
+                    randomDrinkInstructions.innerText = item.drinkInstructions
+                    randomDrinkInstructionsBtn.style.display = 'none'
+
                 randomDrinkInstructions.innerText = ''
                 
                 if (randomDrinkInstructionsBtn.style.visibility === 'hidden') {
@@ -114,6 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     e.preventDefault()
                     randomDrinkInstructions.innerText = item.drinkInstructions
                     randomDrinkInstructionsBtn.style.visibility = 'hidden'
+
                 })
             })
     })
