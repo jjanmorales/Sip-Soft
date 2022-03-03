@@ -146,8 +146,6 @@ body {
 }
 
 
-
-
 #category-drink-cards1,
 #random-drink-card {
   margin-top: 50px;
@@ -158,4 +156,10 @@ body {
 
 .card-body {
     background-color: #fefdf5;
+}
+
+#random-drink-ingredients {
+  list-style-type: none;
+  display: inline;
+  justify-content: center;
 }
