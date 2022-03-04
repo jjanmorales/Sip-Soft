@@ -68,6 +68,10 @@ body {
     margin-bottom: 40px;
 }
 
+/* #second-drink-cards {
+  height: 300px;
+} */
+
 #category-instructions-btn1,
 #twelve-instructions-btn,
 #eleven-instructions-btn,
@@ -92,7 +96,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: flex-start;
 }
+
 #header-for-cards {
   display: flex;
   justify-content: center;

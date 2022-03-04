@@ -34,11 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 randomDrinkInstructionsBtn.addEventListener('click', (e) => {
                     e.preventDefault()
-                    allIngredients.forEach(ingredient => {
-                        let list = document.createElement('li')
-                        list.innerText = ingredient
-                        randomDrinkIngredients.append(list)
-                    });
+                    // allIngredients.forEach(ingredient => {
+                    //     let list = document.createElement('li')
+                    //     list.innerText = ingredient
+                    //     randomDrinkIngredients.append(list)
+                    // });
                     randomDrinkInstructions.innerText = data[0].drinkInstructions
                     randomDrinkInstructionsBtn.style.visibility = 'hidden'
                 })
