@@ -209,7 +209,5 @@ body {
     }
     #user-input-name, #user-input-ingredients {
         width: 280px;
-        margin-top: 5px;
-        margin-bottom: 10px;     
     }
 } 
