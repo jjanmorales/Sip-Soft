@@ -17,6 +17,7 @@ body {
   margin-left: 20px;
   margin-top: 4px; 
 }
+
 #welcome-card {
   /* width: 50%;  */
   display: flex;
@@ -36,6 +37,7 @@ body {
   height: 220px;
   
 }
+
 
 
 .card-text {
@@ -175,3 +177,10 @@ body {
   display: inline;
   justify-content: center;
 }
+
+@media only screen and (min-width: 375px) {
+    #search-bar {
+        display: flex !important;
+        justify-content: center !important; 
+    } 
+} 
