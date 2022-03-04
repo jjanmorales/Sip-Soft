@@ -196,6 +196,9 @@ body {
      #welcome-card {
          margin: 0; 
      }
+     #random-drink {
+         margin: 10px; 
+     }
     #main-message {
         margin: 4px;
         height: 350px;     
