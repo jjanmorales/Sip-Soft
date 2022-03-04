@@ -130,17 +130,17 @@ body {
 
 #search-btn:hover {
   cursor: pointer;
-  background-color: rgb(155, 237, 200);
+  background-color: rgb(225, 225, 225);
 }
 
 #ingredient-search-btn:hover {
   cursor: pointer;
-  background-color: rgb(155, 237, 200);
+  background-color: rgb(225, 225, 225);
 }
 
 #random-drink:hover {
   cursor: pointer;
-  background-color: rgb(155, 237, 200);
+  background-color: rgb(225, 225, 225);
 }
 
 #twelve-instructions-btn:hover,
