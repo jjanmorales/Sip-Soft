@@ -21,16 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 randomDrinkDivHolder.style.visibility = 'visible'
                 randomDrinkDivHolder.style.paddingBottom = '500px'
 
-                randomDrinkInstructions.innerText = ''
-                
-                if (randomDrinkInstructionsBtn.style.visibility === 'hidden') {
-                    randomDrinkInstructionsBtn.style.visibility ='visible'
-                }
-
                 randomDrinkInstructionsBtn.addEventListener('click', (e) => {
                     e.preventDefault()
                     randomDrinkInstructions.innerText = data[0].drinkInstructions
-                    randomDrinkInstructionsBtn.style.visibility = 'hidden'
+                    randomDrinkInstructionsBtn.style.display = 'none'
                 })
             })
     })
@@ -61,18 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 randomDrinkDivHolder.style.visibility = 'visible'
                 randomDrinkDivHolder.style.paddingBottom = '500px'
 
-                // randomDrinkInstructionsBtn.style.visibility = 'visible'
-
-                randomDrinkInstructions.innerText = ''
-                
-                if (randomDrinkInstructionsBtn.style.visibility === 'hidden') {
-                    randomDrinkInstructionsBtn.style.visibility ='visible'
-                }
-
                 randomDrinkInstructionsBtn.addEventListener('click', (e) => {
                     e.preventDefault()
                     randomDrinkInstructions.innerText = item.drinkInstructions
-                    randomDrinkInstructionsBtn.style.visibility = 'hidden'
+                    randomDrinkInstructionsBtn.style.display = 'none'
                 })
             })
     })
@@ -86,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // const categoryCardInstructions = document.getElementById('category-card1-instructions')
     // const categoryInstructionsButton = document.getElementById('category-instructions-btn1')
     // const categoryDivHolder = document.getElementById('category-drink-cards1')
-
+    
 
     ingredientSearchButton.addEventListener('click', (e) => {
         e.preventDefault()
@@ -104,23 +90,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 randomDrinkDivHolder.style.visibility = 'visible'
                 randomDrinkDivHolder.style.paddingBottom = '500px'
 
-
                 randomDrinkInstructionsBtn.addEventListener('click', (e) => {
                     e.preventDefault()
                     randomDrinkInstructions.innerText = item.drinkInstructions
                     randomDrinkInstructionsBtn.style.display = 'none'
-
-                randomDrinkInstructions.innerText = ''
-                
-                if (randomDrinkInstructionsBtn.style.visibility === 'hidden') {
-                    randomDrinkInstructionsBtn.style.visibility ='visible'
-                }
-
-                randomDrinkInstructionsBtn.addEventListener('click', (e) => {
-                    e.preventDefault()
-                    randomDrinkInstructions.innerText = item.drinkInstructions
-                    randomDrinkInstructionsBtn.style.visibility = 'hidden'
-
                 })
             })
     })

@@ -43,18 +43,7 @@ body {
 }
 
 #search-bar{
-  background-color: rgb(247, 243, 243) !important;  
-  justify-content: left;
-  align-items: flex-end;
-  height: 400px;
-  background-size: cover;
-  background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/negroni-cocktail-royalty-free-image-638677438-1567153315.jpg");
-}
-
-#main-message {
-  background: rgba(255, 255, 255, 0.846);
-  margin-bottom: 30px;
-  height: 220px;
+    background-color: rgb(247, 243, 243) !important;  
 }
 
 #category-drink-cards1,
@@ -159,29 +148,6 @@ body {
 
 
 
-#twelve-instructions-btn,
-#eleven-instructions-btn,
-#tenth-instructions-btn,
-#ninth-instructions-btn,
-#eighth-instructions-btn,
-#seventh-instructions-btn,
-#sixth-instructions-btn,
-#fifth-instructions-btn,
-#fourth-instructions-btn,
-#third-instructions-btn,
-#instructions-btn-random,
-#instructions-btn,
-#second-instructions-btn {
-  background-color: rgb(31, 69, 68);
-}
-
-
-#instructions-btn-random:hover,
-#instructions-btn:hover,
-#second-instructions-btn:hover {
-  background-color: rgb(52, 122, 118);
-}
-
 #category-drink-cards1,
 #random-drink-card {
   margin-top: 50px;
@@ -193,4 +159,3 @@ body {
 .card-body {
     background-color: #fefdf5;
 }
-
